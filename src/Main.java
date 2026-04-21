@@ -1,5 +1,6 @@
 import utils.ProgramConfiguration;
-
+import utils.ConfigParser;
+import utils.CliConfigParser;
 /**
  * Входна точка на програмата.
  * Поддържани аргументи:
@@ -11,9 +12,9 @@ import utils.ProgramConfiguration;
  *   -d / -dynamic                      Динамично балансиране (по подразбиране: статично)
  *   -i / -iter     <n>                 Макс. брой итерации (по подразбиране: 1000)
  */
-
 public class Main {
     public static void main(String[] args) {
-        ProgramConfiguration cfg = parseArgs(args);
+        ConfigParser parser = new CliConfigParser();
+        ProgramConfiguration cfg = parser.parseArgs(args);
     }
 }
