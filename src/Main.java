@@ -15,6 +15,6 @@ import utils.CliConfigParser;
 public class Main {
     public static void main(String[] args) {
         ConfigParser parser = new CliConfigParser();
-        ProgramConfiguration cfg = parser.parseArgs(args);
+        ProgramConfiguration cfg = parser.parse(args);
     }
 }
