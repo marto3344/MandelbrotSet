@@ -39,8 +39,16 @@ public class ProgramConfiguration {
         this.height = height;
     }
 
+    public double getReMax() {
+        return reMax;
+    }
+
     public void setReMax(double reMax) {
         this.reMax = reMax;
+    }
+
+    public double getReMin() {
+        return reMin;
     }
 
     public void setReMin(double reMin) {
@@ -112,7 +120,3 @@ public class ProgramConfiguration {
         );
     }
 }
-
-
-
-
